@@ -4,5 +4,14 @@ http://192.168.0.11:8000/
 Include my software engineering quiz project 
 Grading of the dissertation 
 
+**********Some of the important git commands I knew nothing about*******
+pip freeze > requirements.txt #list all the plugins
 
-Depandabot in git authomatically updated the versions of the requirement.txt upto date and thsi cause my cone to malfunction 
+
+
+**********Problems Ecountered and Solution********************
+Depandabot in git authomatically updated the versions of the requirement.txt upto date and thsi cause my cone to malfunction. It took me a while to realise the error and dissable the option for auto update of my requirements files 
+
+I used a software called XAMPP to connect my databases while working remotely(offline) but it was very difficult for me to edit the code use another software when the website was hosted to a free hosting provider
+
+It was also difficult finding a hosting provider to host my python code and first instance. It was after a throrough search that I can to know about pythoneverywhere.
