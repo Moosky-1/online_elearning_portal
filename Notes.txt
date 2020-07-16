@@ -10,6 +10,8 @@ Grading of the dissertation
 
 pip freeze > requirements.txt #list all the plugins
 
+*********************Source: https://www.youtube.com/watch?v=RGOj5yH7evk  ***********8
+
 METHOD 1
 Initialise a normal project folder to git.
 create the folder and a Read.me file
@@ -25,6 +27,19 @@ create a clone folder[fold1] in git and copy the folder's link
 Create another folder on local pc, right click and choose #open bash here#
 #git clone (link)
 enter the project files in the fold1 the add, commit and push
+
+BRANCH(32:42)
+#git branch 		#check the branch you are into
+#git checkout		 #to switch between branches
+#git checkout -b branch   #to create a second branch called branch2
+#git checkout branch 	#switch to branch
+#git diff master 	# highlights the changes made in the master branch
+#git commit
+#git push
+
+RESET
+#git reset Readme #to reset the the name of the file to be unstaged
+#git reset HEAD~1  # To undo changes in the last commit
 
 
 ********************************************************************************************************
