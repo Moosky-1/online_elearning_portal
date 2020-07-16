@@ -8,8 +8,11 @@ def index(request):
 def about(request):
     return render(request,'about.html')
 def contact(request):
-    return render(request,'contact.html')	
-	
+    return render(request,'contact.html')
+def social(request):
+    return render(request,'social.html')
+    	
+
 def listing(request, employeeId):
     try:
         employeelist =  employee.objects.filter(Q(employee_level=employeeId))
@@ -20,9 +23,8 @@ def listing(request, employeeId):
         "showmsg": True,
         "message": "User Updated Successfully",
         "employeelist": employeelist
-    }	
+    }
 	    # Message according Users Role #
     if(employeeId == "1"):
         context['heading'] = "User Report";
     return render(request,'employee-report.html',context)
-	
