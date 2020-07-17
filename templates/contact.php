@@ -6,9 +6,9 @@ $phone = $_POST['phone'];
 
 $emai_from = 'Remote Classroom Student Enquiry';
 $email_subject = 'New Message from student';
-$email_body = "Name: $name.\n",
-              "Email: $email.\n",
-              "Message: $message.\n",
+$email_body = "Name: $name.\n".
+              "Email: $email.\n".
+              "Message: $message.\n".
               "Phone: $phone.\n";
 
 $to = "wiylanyuyM@cardiff.ac.uk";
