@@ -97,7 +97,8 @@
                 <textarea name="message" placeholder="" rows="5" class="form-control">
                 </textarea>
               </div>
-              <input type="hidden" name="csrf" value="<?php echo $csrf ?>">
+              {{ form }}
+              {% csrf_token %}
               <button class="btn btn-info" type="submit">
                 Submit
               </button>
