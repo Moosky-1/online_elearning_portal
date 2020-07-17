@@ -11,7 +11,8 @@ def contact(request):
     return render(request,'contact.html')
 def social(request):
     return render(request,'social.html')
-    	
+def contacts(request):
+    return render(request,'contacts.php')
 
 def listing(request, employeeId):
     try:
