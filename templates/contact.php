@@ -4,7 +4,7 @@ session_start();
 if (empty($_SESSION['key']))
     $_SESSION['key'] = bin2hex(random_bytes(32));
 
-$csrf = hash_hmac('sha256','this is some string: contact.php', $_SESSION['key'])
+$csrf = hash_hmac('sha256','this is some string: contact.html', $_SESSION['key'])
 
 if(isset($_POST['submit'])){
   if (hash_equals($csrf, $_POST['csrf'])){
