@@ -18,7 +18,7 @@ def listing(request):
         "topicslist": topicslist
     }
 
-    # Message according medicines Role #
+    # Message according topics Role #
     context['heading'] = "Topics Details";
     return render(request, 'topics-details.html', context)
 
@@ -31,7 +31,7 @@ def lists(request, id):
         "topicslist": topicslist
     }
 
-    # Message according medicines Role #
+    # Message according topics Role #
     context['heading'] = "Topics Details";
     return render(request, 'topics-list.html', context)
 

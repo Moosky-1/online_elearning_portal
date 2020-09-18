@@ -93,7 +93,7 @@ def update(request, userId):
                 fs = FileSystemStorage()
                 filename = fs.save(userImage.name, userImage)
                 user_image = fs.url(userImage)
-            
+
             addUser = user(
             user_id = userId,
             user_first_name = request.POST['user_first_name'],
@@ -111,15 +111,15 @@ def update(request, userId):
             user_level_id = request.POST['user_level_id'],
             user_state = request.POST['user_state'],
             user_image = user_image)
-            
+
             addUser.save()
         except Exception as e:
             return HttpResponse('Something went wrong. Error Message : '+ str(e))
 
-        if (request.session.get('user_level_id', None) == 1):    
+        if (request.session.get('user_level_id', None) == 1):
             messages.add_message(request, messages.INFO, "User Updated Successfully !!!")
             return redirect('/users/report/'+request.POST['user_level_id'])
-    
+
         context["userdetails"] = user.objects.get(user_id=userId)
         messages.add_message(request, messages.INFO, "Your Account Updated Successfully !!!")
         return render(request,'user.html', context)
@@ -146,7 +146,7 @@ def add(request):
                 userImage = request.FILES['user_image']
                 fs = FileSystemStorage()
                 filename = fs.save(userImage.name, userImage)
-                user_image = fs.url(userImage)
+                user_image = "uploads/"+str(userImage)
 
             addUser = user(user_first_name = request.POST['user_first_name'],
             user_username = request.POST['user_username'],
